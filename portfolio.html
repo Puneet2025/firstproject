@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Puneet Agrawal- Web Developer</title>
+    <meta name="description" content />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/02eec49ec5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;    
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.2rem;
+        }
+        main hr{
+            border:0;
+            background:#9c97f1;
+            height: 1.2px;
+            margin:60px 84px;
+        }
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+        }
+        .left {
+            font-size: 1.5rem;
+            margin-left: 30px;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 90px 0;
+        }
+        .firstSection > div {
+            width: 30%;
+        }
+        .leftSection {
+            font-size: 1.7rem;
+        }
+        .rightSection img {
+            width: 80%;
+        }
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+        #element {
+            color: rgb(170, 107, 228);
+        }
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+        .secondsection img{
+            width: 25%;
+            height: 100%;
+            margin: auto;
+        } 
+        h3{
+            display: flex;
+            font-size: 35px;
+            justify-content: space-around;
+            margin-right: 220px;
+            top: -20rem;
+        }
+        p{
+            display: flex;
+            font-size: 20px;
+            justify-content: end;
+            margin-left: 26rem;
+            top:-20rem
+        }
+        .personalinfo{
+            display: flex;
+            font-size: 20px;
+            justify-content: end;
+            margin-right: 500px;
+            padding-left: 25rem;
+        }
+        .button{
+        } 
+        .download {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 65rem;
+        }
+        .icons{
+            display: flex;
+        }
+        .icons a{
+            width: 40px;
+            height: 100px;
+            border-radius: 50%;
+            font-size: 30px;
+        }
+        h4{
+            font-size: 25px;
+            /* margin-left: 45px; */
+            margin: auto;
+        }
+        .align{
+            position: relative;
+            bottom: 15rem;
+        }
+        .pos{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Puneet's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Hobbies</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+                <ul class="hamburger">
+                    <li onclick="myFunction()">
+                        <i class="fa-solid fa-hamburger"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Puneet</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="dev.png.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <img src="puneet1.jpg" alt="">
+            <h3 class="align" >About Me
+            </h3>
+            <p class="align"> 
+            I am a web developer with an amazing experience in creating 
+            and designing web pages and I am a Java Programmer. I am a Computer Science Engineer.   
+            </p>
+            <div class="personalinfo align" style="top: -14.5rem;">
+                <div class="pos" style="top: -5rem; right:5.4rem"><span>Name: </span><span>Puneet Agrawal</span></div>
+                <div class="pos" style="top: -3rem; right:15rem;"><span>Age: </span><span>20</span></div>
+                <div class="pos" style="top: -1.3rem; right:-1.1rem;"><span>Email: </span><span>puneetag0177@gmail.com</span></div>
+                <div class="pos" style="top: 0.4rem; right: -3.5rem;"><span>Address: </span><span>A-20, Chandrapuri, Mathura</span></div>
+            </div>
+            <div class="button">
+                <button class="download">Download CV</button>
+            </div>
+            <h4>connect with me</h4>
+            <div class="icons">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/direct/inbox/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/feed/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="+919997598238" target="_blank">
+                    <i class="fa-solid fa-address-book"></i>
+                </a>
+                <a href="+919997598238" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src async defer></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Digital Marketer', 'Entrepreneur'],
+            typeSpeed: 40,
+        });
+    </script>
+</body>
+</html>
