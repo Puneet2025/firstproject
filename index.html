@@ -17,211 +17,143 @@
             margin: 0;
             padding: 0;
         }
-
         body {
             background-color: rgb(0, 0, 33);
             color: white;
-            font-family: "Poppins", sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
-
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 80px;
             background-color: rgb(18, 18, 62);
+            position: fixed;
+            top: 0;
+            width: 100%;
         }
-
         nav ul {
             display: flex;
             justify-content: center;
         }
-
-        ul li {
+        nav ul li {
             list-style: none;
-            margin: 0 23px;
+            margin: 0 23px;    
         }
-
-        a {
+        nav ul li a {
             text-decoration: none;
-        }
-
-        ul li a {
             color: white;
         }
-
-        ul li a:hover {
+        nav ul li a:hover {
             color: rgb(153, 153, 226);
             font-size: 1.2rem;
         }
-
-        /* .mobile {
-        transition: width 0.3s ease;
-      } */
-        .mobile {
-            background-color: #12123e8a;
-        }
-
-        .hamburger {
-            display: none;
-        }
-
-        main hr {
-            border: 0;
-            background: #9c97f1;
+        main hr{
+            border:0;
+            background:#9c97f1;
             height: 1.2px;
-            margin: 60px 84px;
+            margin:60px 84px;
         }
-
         .hamburger {
             display: none;
             font-size: 2rem;
         }
-
         .left {
             font-size: 1.5rem;
             margin-left: 30px;
         }
-
         .firstSection {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin: 90px 0;
         }
-
-        .firstSection>div {
+        .firstSection > div {
             width: 30%;
         }
-
         .leftSection {
             font-size: 1.7rem;
         }
-
         .rightSection img {
             width: 80%;
         }
-
         .purple {
             color: rgb(170, 107, 228);
         }
-
         #element {
             color: rgb(170, 107, 228);
         }
-
         .secondsection {
-            /* max-width: 80vw;
-        margin: auto; */
-            padding: 0 4rem;
+            max-width: 80vw;
+            margin: auto;
         }
-
-        /* p {
-        display: flex;
-        justify-content: end;
-        margin-left: 250px;
-      } */
-        /* .personalinfo {
-        display: grid;
-        justify-content: end;
-        margin-right: 273px;
-      } */
-        .button {
-            /* display: grid;
-        justify-content: end;
-        margin-right: 20px; */
+        .secondsection img{
+            width: 25%;
+            height: 100%;
+            margin: auto;
+        } 
+        h3{
+            display: flex;
+            font-size: 35px;
+            justify-content: space-around;
+            margin-right: 220px;
+            top: -20rem;
         }
-
+        p{
+            display: flex;
+            font-size: 20px;
+            justify-content: end;
+            margin-left: 26rem;
+            top:-20rem
+        }
+        .personalinfo{
+            display: flex;
+            font-size: 20px;
+            justify-content: end;
+            margin-right: 500px;
+            padding-left: 25rem;
+        }
+        .button{
+        } 
         .download {
             padding: 10px 20px;
             font-size: 16px;
-            margin-top: 20px;
+            margin-left: 65rem;
         }
-
-        .icons {
+        .icons{
             display: flex;
-            justify-content: center;
-            margin-top: 10px;
         }
-
-        .icons a {
-            margin: 0 10px;
-            font-size: 1.5rem;
+        .icons a{
+            width: 40px;
+            height: 100px;
+            border-radius: 50%;
+            font-size: 30px;
         }
-
-        /*.icons a {
-        width: 40px;
-        height: 80px;
-        border-radius: 50%;
-      } */
-        h4 {
-            font-size: 22px;
-            text-align: center;
-            /* top: 2rem; */
+        h4{
+            font-size: 25px;
             /* margin-left: 45px; */
+            margin: auto;
         }
-
-        .social-links {
-            padding: 10px;
-            margin-right: 50px;
+        .align{
+            position: relative;
+            bottom: 15rem;
         }
-
-        .about-me {
-            padding: 10px;
-        }
-
-        .about-section {
-            display: flex;
-            /* flex-wrap: wrap; */
-        }
-
-        @media screen and (max-width: 650px) {
-            .about-section {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .hamburger {
-                display: block;
-                font-size: 2rem;
-            }
-
-            .mobile ul li {
-                padding: 10px;
-            }
-
-            .menu-list {
-                display: none;
-            }
-        }
-
-        @media screen and (min-width: 651px) {
-            .hamburger {
-                display: none;
-            }
-
-            .mobile {
-                display: none;
-            }
-        }
-
-        .d-none {
-            display: none;
+        .pos{
+            position: absolute;
         }
     </style>
 </head>
-
 <body>
     <header>
         <nav>
             <div class="left">Puneet's Portfolio</div>
             <div class="right">
-                <ul class="menu-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Hobbies</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Hobbies</a></li>
+                    <li><a href="/">Contact</a></li>
                 </ul>
                 <ul class="hamburger">
                     <li onclick="myFunction()">
@@ -230,19 +162,7 @@
                 </ul>
             </div>
         </nav>
-        <div>
-            <div class="mobile d-none" id="mobileLinks">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Hobbies</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
     </header>
-
     <main>
         <section class="firstSection">
             <div class="leftSection">
@@ -251,40 +171,26 @@
                 <span id="element"></span>
             </div>
             <div class="rightSection">
-                <img src="dev.png.png" alt="" />
+                <img src="dev.png.png" alt="">
             </div>
         </section>
-        <hr />
+        <hr>
         <section class="secondsection">
-            <div class="about-section">
-                    <div class="about-me">
-                    <h3>About Me</h3>
-                    <p>
-                        I am a web developer with an amazing experience in creating and
-                        designing web pages and I am a Java Programmer. I am a Computer
-                        Science Engineer.
-                    </p>
-                    <div class="personalinfo">
-                        <div><span>Name: </span><span>Puneet Agrawal</span></div>
-                        <div><span>Age: </span><span>20</span></div>
-                        <div><span>Email: </span><span>puneetag0177@gmail.com</span></div>
-                        <div>
-                            <span>Address: </span><span>A-20, Chandrapuri, Mathura</span>
-                        </div>
-                    </div>
-                    <div class="button">
-                        <button class="download">Download CV</button>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <div>
-                        <div class="social-links">
-                            <div>
-                                <div><img src="puneet1.jpg" width="220" height="220" /></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <img src="puneet1.jpg" alt="">
+            <h3 class="align" >About Me
+            </h3>
+            <p class="align"> 
+            I am a web developer with an amazing experience in creating 
+            and designing web pages and I am a Java Programmer. I am a Computer Science Engineer.   
+            </p>
+            <div class="personalinfo align" style="top: -14.5rem;">
+                <div class="pos" style="top: -5rem; right:5.4rem"><span>Name: </span><span>Puneet Agrawal</span></div>
+                <div class="pos" style="top: -3rem; right:15rem;"><span>Age: </span><span>20</span></div>
+                <div class="pos" style="top: -1.3rem; right:-1.1rem;"><span>Email: </span><span>puneetag0177@gmail.com</span></div>
+                <div class="pos" style="top: 0.4rem; right: -3.5rem;"><span>Address: </span><span>A-20, Chandrapuri, Mathura</span></div>
+            </div>
+            <div class="button">
+                <button class="download">Download CV</button>
             </div>
             <h4>connect with me</h4>
             <div class="icons">
@@ -310,19 +216,10 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
     <script>
-        var typed = new Typed("#element", {
-            strings: ["Web Developer", "Digital Marketer", "Entrepreneur"],
-            typeSpeed: 50,
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Digital Marketer', 'Entrepreneur'],
+            typeSpeed: 40,
         });
-        function myFunction() {
-            var element = document.getElementById("mobileLinks");
-            if (element.classList.contains("d-none")) {
-                element.classList.remove("d-none");
-            } else {
-                element.classList.add("d-none");
-            }
-        }
     </script>
 </body>
-
 </html>
